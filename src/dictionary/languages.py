@@ -1,4 +1,4 @@
-languages = {
+language = {
     "EN": "https://api.dictionaryapi.dev/api/v2/entries/en/",
     "PT": "https://api.dictionaryapi.dev/api/v2/entries/pt-BR/",
     "HI": "https://api.dictionaryapi.dev/api/v2/entries/hi/",
