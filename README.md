@@ -1,22 +1,22 @@
 <p align="center">
-  <img width="200" align="center" src="https://github.com/ropoko/cli-dictionary/blob/main/assets/logo.png">
+  <img width="200" align="center" src="https://github.com/ropoko/dictionary-cli/blob/main/assets/logo.png">
 </p>
 
 <h1 align="center">
-  Cli-dictionary
+  Dictionary-cli
 </h1>
 <p align="center">
-  A lightweight and fast dictionary from command line.
+Dictionary for command line, re-written for various educational purposes.
 </p>
 
 <p align="center">
-   <a style="text-decoration:none" href="https://github.com/ropoko/cli-dictionary/stargazers/">
-    <img src="https://img.shields.io/github/stars/ropoko/cli-dictionary?style=flat&color=yellow" alt="stars" />
+   <a style="text-decoration:none" href="https://github.com/ropoko/dictionary-cli/stargazers/">
+    <img src="https://img.shields.io/github/stars/ropoko/dictionary-cli?style=flat&color=yellow" alt="stars" />
   </a>
-  <a style="text-decoration:none" href="https://gitHub.com/ropoko/cli-dictionary/tags/">
-    <img src="https://img.shields.io/github/tag/ropoko/cli-dictionary?style=flat" alt="tags" />
+  <a style="text-decoration:none" href="https://gitHub.com/ropoko/dictionary-cli/tags/">
+    <img src="https://img.shields.io/github/tag/ropoko/dictionary-cli?style=flat" alt="tags" />
   </a>
-  <a href="https://lgtm.com/projects/g/ropoko/cli-dictionary/context:python"><img alt="Language grade: Python" src="https://img.shields.io/lgtm/grade/python/g/ropoko/cli-dictionary.svg?logo=lgtm&logoWidth=18"/>
+  <a href="https://lgtm.com/projects/g/ropoko/dictionary-cli/context:python"><img alt="Language grade: Python" src="https://img.shields.io/lgtm/grade/python/g/ropoko/dictionary-cli.svg?logo=lgtm&logoWidth=18"/>
   </a>
 </p>
 
@@ -39,18 +39,18 @@
 
 ## Features
 ### Setting default language
-`$ cli-dictionary --lang-default <lang>`
+`$ dictionary-cli --lang-default <lang>`
 
 after that, you don't need to type the language to search a word, example:
-`$ cli-dictionary <word>`
+`$ dictionary-cli <word>`
 
 note: in all the examples below, the `<lang>` can be omitted.
 
 ### Synonyms
-`$ cli-dictionary <word> <lang> -s` or `$ cli-dictionary <word> <lang> --synonyms`
+`$ dictionary-cli <word> <lang> -s` or `$ dictionary-cli <word> <lang> --synonyms`
 
 ### Examples
-`$ cli-dictionary <word> <lang> -e` or `$ cli-dictionary <word> <lang> --examples`
+`$ dictionary-cli <word> <lang> -e` or `$ dictionary-cli <word> <lang> --examples`
 
 ### Anki - Flashcards
 - card-types: basic, basic-reverse and cloze.
@@ -59,17 +59,17 @@ note: in all the examples below, the `<lang>` can be omitted.
 note: you don't need to create the deck and subdecks, the app does it itself.
 
 #### Creating card
-`$ cli-dictionary <word> <lang> --card <type>`
+`$ dictionary-cli <word> <lang> --card <type>`
 
 #### Changing profile before creating the card
-`$ cli-dictionary <word> <lang> --profile "User name" --card <type>`
+`$ dictionary-cli <word> <lang> --profile "User name" --card <type>`
 
 ## :zap: Installing
 try versions in devmode from:
 
-[![](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/cli-dictionary)
+[![](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/dictionary-cli)
 
-or simply: `$ sudo snap install cli-dictionary`
+or simply: `$ sudo snap install dictionary-cli`
 
 ### Using Anki Features
 
@@ -78,11 +78,11 @@ Just follow the steps in the [documentation](https://github.com/FooSoft/anki-con
 note: while you're using the dictionary to create cards, the anki app must be open, otherwise some weird errors will appear :P
 ## :rocket: Running
 
-command: `$ cli-dictionary <word> <lang>`
+command: `$ dictionary-cli <word> <lang>`
 
-![](https://github.com/ropoko/cli-dictionary/blob/main/assets/demo-new.gif)
+![](https://github.com/ropoko/dictionary-cli/blob/main/assets/demo-new.gif)
 
-## :coffee: Contributing 
+## :coffee: Contributing
 - [Buy me a coffee](https://picpay.me/ropoko)
 - Pull Requests and issues are welcome
 
@@ -92,6 +92,6 @@ command: `$ cli-dictionary <word> <lang>`
 - [Google Api Dictionary](https://github.com/meetDeveloper/googleDictionaryAPI)
 - For more informations about Snap Packages  [click here](https://snapcraft.io/docs).
 
-## Special Thanks 
+## Special Thanks
 - Rafael Ferrari whom made the logo | [mailto](mailto:rafaelferrari.job@gmail.com), number: +55 14 988045194
 
