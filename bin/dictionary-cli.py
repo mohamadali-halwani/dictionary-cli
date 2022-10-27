@@ -11,9 +11,9 @@ currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
 
-from anki import anki
+#from anki import anki
 from random import randint
-from language import language
+#from language import language
 
 WORD_MEANING = []
 WORD_EXAMPLES = []
@@ -48,7 +48,7 @@ def main(word, *args):
     with open(lang_file) as file:
         lang_json = json.load(file)
         default_lang = lang_json['default_lang']
-    
+
     lang = ''
     sy = ''  # synonyms
     ex = ''  # examples
@@ -57,7 +57,7 @@ def main(word, *args):
     for arg in args:
         sy = arg[0]['synonyms']
         ex = arg[0]['examples']
-        
+
         if arg[0]['lang_default'] != None:
             define_lang(arg[0]['lang_default'])
             return
@@ -73,7 +73,7 @@ def main(word, *args):
         }
 
         break
-    
+
     # upper() because in list of language.py all the abbreviation are uppercased.
     lang = lang.upper()
 
@@ -191,14 +191,14 @@ def synonyms(url):
 
 def get_anki(card, lang, word, meaning, **kwargs):
     print('ANKI LOG ----------------------')
-    
+
     profile = kwargs.get('profile')
 
     create_anki(lang)
 
     random_meaning = randint(0, len(meaning) - 1)
 
-    if card is None: 
+    if card is None:
         print('Oops! You should select a card type!')
         return
     elif profile is None:
